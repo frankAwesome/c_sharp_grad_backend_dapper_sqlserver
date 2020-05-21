@@ -8,7 +8,6 @@ using c_sharp_grad_backend.Models;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace c_sharp_grad_backend.Controllers
@@ -54,31 +53,11 @@ namespace c_sharp_grad_backend.Controllers
         [HttpPut("editprofile")]
         public async Task<IActionResult> EditProfile(UserProfile userProfile)
         {
-            //var result = await _context.TableUserProfiles.SingleOrDefaultAsync(b => b.Username == userProfile.Username);
-            //if (result != null)
-            //{
-            //    result.Firstname = userProfile.Firstname;
-            //    result.Lastname = userProfile.Lastname;
-            //    result.AvatarOne = userProfile.AvatarOne;
-            //    result.AvatarTwo = userProfile.AvatarTwo;
-            //    result.AvatarThree = userProfile.AvatarThree;
-            //    result.Email = userProfile.Email;
-            //    result.AddressOne = userProfile.AddressOne;
-            //    result.AddressTwo = userProfile.AddressTwo;
-            //    result.Country = userProfile.Country;
-            //    result.Zip = userProfile.Zip;
-            //    result.NameOnCard = userProfile.NameOnCard;
-            //    result.PaymentType = userProfile.PaymentType;
-            //    result.CardNumber = userProfile.CardNumber;
-            //    result.CVV = userProfile.CVV;
-            //    result.ExpirationOnCard = userProfile.ExpirationOnCard;
-            //    result.ExtraPropOne = userProfile.ExtraPropOne;
-            //    result.ExtraPropTwo = userProfile.ExtraPropTwo;
-            //    result.ExtraPropThree = userProfile.ExtraPropThree;
-            //    result.ExtraPropFour = userProfile.ExtraPropFour;
-
-            //    _context.SaveChanges();
-            //}
+            using (SqlConnection connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
+            {
+                var query = "UPDATE TableUserProfiles SET AvatarOne=@AvatarOne, AvatarTwo=@AvatarTwo, AvatarThree=@AvatarThree, Firstname=@Firstname, Lastname=@Lastname, Email=@Email, AddressOne=@AddressOne, AddressTwo=@AddressTwo, Country=@Country, Zip=@Zip, PaymentType=@PaymentType, NameOnCard=@NameOnCard, CardNumber=@CardNumber, ExpirationOnCard=@ExpirationOnCard, CVV=@CVV, ExtraPropOne=@ExtraPropOne, ExtraPropTwo=@ExtraPropTwo, ExtraPropThree=@ExtraPropThree, ExtraPropFour=@ExtraPropFour WHERE Username like @Username";
+                await connection.ExecuteAsync(query, userProfile);
+            }
 
             return StatusCode(200);
         }
