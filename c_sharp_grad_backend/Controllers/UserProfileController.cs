@@ -6,6 +6,7 @@ using c_sharp_grad_backend.Data;
 using c_sharp_grad_backend.Dtos;
 using c_sharp_grad_backend.Models;
 using Dapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
@@ -25,7 +26,7 @@ namespace c_sharp_grad_backend.Controllers
             configuration = _configuration;
         }
 
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Get(UserForProfileDto userForProfileDto)
         {
@@ -36,7 +37,7 @@ namespace c_sharp_grad_backend.Controllers
             }
         }
 
-
+        [Authorize]
         [HttpPost("addprofile")]
         public async Task<IActionResult> AddProfile(UserProfile userProfile)
         {
@@ -49,7 +50,7 @@ namespace c_sharp_grad_backend.Controllers
             return StatusCode(201);
         }
 
-
+        [Authorize]
         [HttpPut("editprofile")]
         public async Task<IActionResult> EditProfile(UserProfile userProfile)
         {

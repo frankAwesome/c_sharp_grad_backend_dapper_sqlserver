@@ -29,7 +29,7 @@ namespace c_sharp_grad_backend.Controllers
             myList = new List<Donations>();
         }
 
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -40,7 +40,7 @@ namespace c_sharp_grad_backend.Controllers
             }        
         }
 
-
+        [Authorize]
         [HttpPost("adddonation")]
         public async Task<IActionResult> AddDonation(Donations donation)
         {
@@ -51,8 +51,8 @@ namespace c_sharp_grad_backend.Controllers
             }
             return StatusCode(201);
         }
-        
 
+        [Authorize]
         [HttpPost("userdonations")]
         public async Task<IActionResult> UserDonations(UserForDonationDto userForDonationDto)
         {
