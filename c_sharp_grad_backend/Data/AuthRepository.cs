@@ -11,16 +11,12 @@ namespace c_sharp_grad_backend.Data
 {
     public class AuthRepository : IAuthRepository
     {
-        private readonly DataContext _context;
         IConfiguration configuration;
 
-        public AuthRepository(DataContext context, IConfiguration _configuration)
+        public AuthRepository(IConfiguration _configuration)
         {
-            _context = context;
             configuration = _configuration;
-
         }
-
 
         public async Task<User> Login(string username, string password)
         {

@@ -303,5 +303,6 @@ C:\Users\bbdnet2240\Projects\Grad C#\SQL Server Backend\c_sharp_grad_backend\c_s
 C:\Users\bbdnet2240\Projects\Grad C#\SQL Server Backend\c_sharp_grad_backend\c_sharp_grad_backend\obj\Debug\netcoreapp3.1\c_sharp_grad_backend.pdb
 C:\Users\bbdnet2240\Projects\Grad C#\SQL Server Backend\c_sharp_grad_backend\c_sharp_grad_backend\obj\Debug\netcoreapp3.1\c_sharp_grad_backend.genruntimeconfig.cache
 C:\Users\bbdnet2240\Projects\Grad C#\SQL Server Backend\c_sharp_grad_backend\c_sharp_grad_backend\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\bbdnet2240\Projects\Grad C#\SQL Server Backend\c_sharp_grad_backend\c_sharp_grad_backend\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 C:\Users\bbdnet2240\Projects\Grad C#\SQL Server Backend\c_sharp_grad_backend\c_sharp_grad_backend\obj\Debug\netcoreapp3.1\c_sharp_grad_backend.csproj.CoreCompileInputs.cache
 C:\Users\bbdnet2240\Projects\Grad C#\SQL Server Backend\c_sharp_grad_backend\c_sharp_grad_backend\obj\Debug\netcoreapp3.1\c_sharp_grad_backend.MvcApplicationPartsAssemblyInfo.cache

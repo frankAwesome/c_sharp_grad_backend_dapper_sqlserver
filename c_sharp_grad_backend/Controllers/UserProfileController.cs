@@ -17,12 +17,10 @@ namespace c_sharp_grad_backend.Controllers
     [Route("api/[controller]")]
     public class UserProfileController : ControllerBase
     {
-        private readonly DataContext _context;
         IConfiguration configuration;
 
-        public UserProfileController(DataContext context, IConfiguration _configuration)
+        public UserProfileController(IConfiguration _configuration)
         {
-            _context = context;
             configuration = _configuration;
         }
 
@@ -43,7 +41,7 @@ namespace c_sharp_grad_backend.Controllers
         {
             using (SqlConnection connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
-                var query = "INSERT INTO [dbo].[TableUserProfiles]([AvatarOne], [AvatarTwo], [AvatarThree], [Username], [Firstname], [Lastname], [Email], [AddressOne], [AddressTwo], [Country], [Zip], [PaymentType], [NameOnCard], [CardNumber], [ExpirationOnCard], [CVV], [ExtraPropOne], [ExtraPropTwo], [ExtraPropThree], [ExtraPropFour]) VALUES(@AvatarOne, @AvatarTwo, @AvatarThree, @Username, @Firstname, @Lastname, @Email, @AddressOne, @AddressTwo, @Country, @Zip, @PaymentType, @NameOnCard, @CardNumber, @ExpirationOnCard, @CVV, @ExtraPropOne, @ExtraPropTwo, @ExtraPropThree, @ExtraPropFour)";
+                var query = "INSERT INTO [dbo].[TableUserProfiles]([AvatarOne], [AvatarTwo], [AvatarThree], [Username], [Firstname], [Lastname], [Email], [Cell], [AddressOne], [AddressTwo], [Country], [Zip], [PaymentType], [NameOnCard], [CardNumber], [ExpirationOnCard], [CVV], [ExtraPropOne], [ExtraPropTwo], [ExtraPropThree], [ExtraPropFour]) VALUES(@AvatarOne, @AvatarTwo, @AvatarThree, @Username, @Firstname, @Lastname, @Email, @Cell, @AddressOne, @AddressTwo, @Country, @Zip, @PaymentType, @NameOnCard, @CardNumber, @ExpirationOnCard, @CVV, @ExtraPropOne, @ExtraPropTwo, @ExtraPropThree, @ExtraPropFour)";
                 await connection.ExecuteAsync(query, userProfile);
             }
 
@@ -56,7 +54,7 @@ namespace c_sharp_grad_backend.Controllers
         {
             using (SqlConnection connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
-                var query = "UPDATE TableUserProfiles SET AvatarOne=@AvatarOne, AvatarTwo=@AvatarTwo, AvatarThree=@AvatarThree, Firstname=@Firstname, Lastname=@Lastname, Email=@Email, AddressOne=@AddressOne, AddressTwo=@AddressTwo, Country=@Country, Zip=@Zip, PaymentType=@PaymentType, NameOnCard=@NameOnCard, CardNumber=@CardNumber, ExpirationOnCard=@ExpirationOnCard, CVV=@CVV, ExtraPropOne=@ExtraPropOne, ExtraPropTwo=@ExtraPropTwo, ExtraPropThree=@ExtraPropThree, ExtraPropFour=@ExtraPropFour WHERE Username like @Username";
+                var query = "UPDATE TableUserProfiles SET AvatarOne=@AvatarOne, AvatarTwo=@AvatarTwo, AvatarThree=@AvatarThree, Firstname=@Firstname, Lastname=@Lastname, Email=@Email, Cell=@Cell, AddressOne=@AddressOne, AddressTwo=@AddressTwo, Country=@Country, Zip=@Zip, PaymentType=@PaymentType, NameOnCard=@NameOnCard, CardNumber=@CardNumber, ExpirationOnCard=@ExpirationOnCard, CVV=@CVV, ExtraPropOne=@ExtraPropOne, ExtraPropTwo=@ExtraPropTwo, ExtraPropThree=@ExtraPropThree, ExtraPropFour=@ExtraPropFour WHERE Username like @Username";
                 await connection.ExecuteAsync(query, userProfile);
             }
 
