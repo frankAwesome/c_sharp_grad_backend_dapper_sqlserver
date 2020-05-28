@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\c_sharp_grad_backend\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj": {}
+    "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\eddie\\c_sharp_grad_backend_dapper_sqlserver\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\c_sharp_grad_backend\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj": {
+    "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\eddie\\c_sharp_grad_backend_dapper_sqlserver\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\c_sharp_grad_backend\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\eddie\\c_sharp_grad_backend_dapper_sqlserver\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj",
         "projectName": "c_sharp_grad_backend",
-        "projectPath": "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\c_sharp_grad_backend\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj",
+        "projectPath": "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\eddie\\c_sharp_grad_backend_dapper_sqlserver\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj",
         "packagesPath": "C:\\Users\\bbdnet2240\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\c_sharp_grad_backend\\c_sharp_grad_backend\\obj\\",
+        "outputPath": "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\eddie\\c_sharp_grad_backend_dapper_sqlserver\\c_sharp_grad_backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -78,6 +78,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
