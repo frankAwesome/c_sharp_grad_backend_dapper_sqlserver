@@ -24,7 +24,6 @@ namespace c_sharp_grad_backend.Controllers
             configuration = _configuration;
         }
 
-        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
