@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tY2O/59mkIiZv/8wiFFSdZSi4p6thB5KVC+OLbprypIi1zYR3DioaoNkELZJuSI+KUhwTnkM9OGm++A0ehQDXA==",
+  "dgSpecHash": "yHax6dA17AnCNdnJ6pnO40OLmGY8YMz3o3aRxQZRiSpiuAmFgqP3fMZiyhHIZV/u8BvMSE5QfMfN7HbH+lURww==",
   "success": true,
   "projectFilePath": "C:\\Users\\bbdnet2240\\Projects\\Grad C#\\SQL Server Backend\\c_sharp_grad_backend\\c_sharp_grad_backend\\c_sharp_grad_backend.csproj",
   "expectedPackageFiles": [
@@ -64,7 +64,6 @@
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
-    "C:\\Users\\bbdnet2240\\.nuget\\packages\\rabbitmq.client\\6.0.0\\rabbitmq.client.6.0.0.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -123,7 +122,7 @@
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
-    "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\bbdnet2240\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
